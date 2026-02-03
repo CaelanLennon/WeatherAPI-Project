@@ -1,0 +1,19 @@
+.Skeleton{
+    max-width: 600px;
+    max-height: 800px;
+    height: 800px;
+    width: 600px;
+    margin: 0 auto;
+    background-color: darksalmon;
+}
+
+.TitleBox{
+    max-width: 600px;
+    max-height: 100px;
+    width: 600px;
+    
+    margin: 0 auto;
+    background-color: lightblue;
+}
+
+
