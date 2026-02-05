@@ -1,19 +1,70 @@
-.Skeleton{
-    max-width: 600px;
-    max-height: 800px;
-    height: 800px;
-    width: 600px;
-    margin: 0 auto;
-    background-color: darksalmon;
+html,body{
+    background-color: #141414;
+    height: 100%;
 }
 
-.TitleBox{
-    max-width: 600px;
-    max-height: 100px;
-    width: 600px;
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.card{
+    display: flex;
+    width: 30rem;
+    height: 40rem;
+    background-color: aqua;
+}
+
+/* --------------------------------------------------- */
+.topBox{
+    display: flex;
+    height: 2rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: blueviolet;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.titleText{
     
-    margin: 0 auto;
-    background-color: lightblue;
 }
 
+.unitsOfTemp{
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+    width: 8rem;
+}
 
+.degrees{
+    background-color: red;
+}
+
+.faren{
+    background-color: blue;
+}
+
+/* --------------------------------------------------- */
+
+.centeralContent{
+    display: flex;
+
+}
+
+.weatherInfo{
+    
+}
+
+.tempLeft{
+
+}
+
+.infoRight{
+
+}
