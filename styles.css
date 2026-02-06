@@ -15,6 +15,12 @@ body{
     width: 30rem;
     height: 40rem;
     background-color: aqua;
+    background-image: url(assets/desertPlanetDay.jpg);
+    
+}
+
+.card img{
+    object-fit: cover;
 }
 
 /* --------------------------------------------------- */
@@ -25,7 +31,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
-    background-color: blueviolet;
+    background-color: rgb(71, 69, 73);
     font-family: monospace;
     font-size: 20px;
 }
