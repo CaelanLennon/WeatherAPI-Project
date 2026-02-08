@@ -1,3 +1,5 @@
+
+
 html,body{
     background-color: #141414;
     height: 100%;
@@ -12,10 +14,13 @@ body{
 
 .card{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+
     width: 30rem;
     height: 40rem;
     background-color: aqua;
-    background-image: url(assets/desertPlanetDay.jpg);
+    background-image: url(assets/DesertPlanetDay.png);
     
 }
 
@@ -26,20 +31,33 @@ body{
 /* --------------------------------------------------- */
 .topBox{
     display: flex;
-    height: 2rem;
+    height: 3rem;
     width: 100%;
+    
+    box-sizing: border-box;
+    
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
-    background-color: rgb(71, 69, 73);
+    
+    background-image: url(assets/TopBarBackground.png);
     font-family: monospace;
     font-size: 20px;
+    color: rgb(255, 255, 5);
+    border: 3px solid #ffffff;
+
+    transition: transform 1s ease, box-shadow 1s ease;  
+    /*We have to put the transition here because if we put it in hover, once the mouse stops hover it will instantly snap back, so it will have a smooth pop out but snaps back insntatly */
+    box-shadow: 0 5px 50px rgb(255, 234, 0);
 }
 
-.titleText{
+.topBox:hover,
+.topBox:focus-within{
+    
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 5px 100px rgb(255, 234, 0);
     
 }
-
 .unitsOfTemp{
     display: flex;
     height: auto;
@@ -48,29 +66,103 @@ body{
     width: 8rem;
 }
 
-.degrees{
-    background-color: red;
-}
-
-.faren{
-    background-color: blue;
-}
-
 /* --------------------------------------------------- */
 
 .centeralContent{
     display: flex;
+    width: 85%;
+    height: 35rem;
 
+    border: solid 2px #ffffff;
+
+    margin-top: auto;
+    margin-bottom: auto;
+
+    flex-direction: column;
+    align-items: center;
 }
 
+
+/* --------------------------------------------------- */
+
+.mainTemp{
+    display: flex;
+    height: 32%;
+    width: 50%;
+    /* background-color: aqua; */
+    border: solid 3px white;
+    margin-top: 5%;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.weatherIcon{
+    display: flex;
+    height: 9rem;
+    width: 8rem;
+
+    margin-top: 0.8rem;
+    background-image: url(assets/WeatherIcons/Sunny.png);
+    background-size: cover;
+}
+
+.tempInfo{
+    font-family: monospace;
+    font-size: 35px;
+    margin: auto;
+    color: black;
+}
+        
+/* --------------------------------------------------- */
+
 .weatherInfo{
+    display: flex;
+    min-width: 90%;
+    min-height: 7rem;
+    
+    width: 90%;
+    height: 7rem;
+    background-color: black;
+    margin: auto;
+}
+
+.windSpeed{
+    width: 40%;
+    height: 80%;
+    background-color: white;
+    margin: auto;
+}
+
+.humidity{
+    width: 40%;
+    height: 80%;
+    background-color: red;
+    margin: auto;
+}
+
+/* --------------------------------------------------- */
+
+.character{
+    display: flex;
+    width: 12rem;
+    height: 12rem;
+    margin: auto;
+    margin-right: 80%;
+    background-image: url(assets/Luke/luke1.png);
+    background-size: cover;
     
 }
 
-.tempLeft{
-
+.character:hover{
+    animation-name: characterSprites;
+    animation-timing-function: step-start;
+    animation-duration: 1s;    
+    animation-iteration-count: infinite;
 }
 
-.infoRight{
-
+@keyframes characterSprites {
+    0% {background-image: url(assets/Luke/luke1.png)}
+    33%{background-image: url(assets/Luke/luke2.png);}
+    66%{background-image: url(assets/Luke/luke3.png);}
+    100%{background-image: url(assets/Luke/luke4.png);}
 }
