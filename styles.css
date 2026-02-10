@@ -120,24 +120,43 @@ body{
     min-width: 90%;
     min-height: 7rem;
     
-    width: 90%;
+    width: 95%;
     height: 7rem;
-    background-color: black;
+     
     margin: auto;
 }
 
 .windSpeed{
     width: 40%;
     height: 80%;
-    background-color: white;
+    border: solid 3px white;
     margin: auto;
+
+    font-family: monospace;
+    font-size: 15px;
+    text-align: center;
 }
 
 .humidity{
     width: 40%;
     height: 80%;
-    background-color: red;
+    border: solid 3px white;
     margin: auto;
+
+    font-family: monospace;
+    font-size: 15px;
+    text-align: center;
+}
+
+.precipitationRate{
+    width: 40%;
+    height: 80%;
+    border: solid 3px white;
+    margin: auto;
+
+    font-family: monospace;
+    font-size: 15px;
+    text-align: center;
 }
 
 /* --------------------------------------------------- */
@@ -166,3 +185,6 @@ body{
     66%{background-image: url(assets/Luke/luke3.png);}
     100%{background-image: url(assets/Luke/luke4.png);}
 }
+
+/* --------------------------------------------------- */
+
